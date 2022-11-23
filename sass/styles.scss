@@ -31,6 +31,17 @@ body {
     background-color: #0d0d0d;
     overflow-x: hidden;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    & .houseicon {
+      font-size: 3rem;
+      &:hover {
+        color: #818181;
+      }
+    }
     
   }
   
@@ -51,11 +62,10 @@ body {
     background-repeat: none;
     background-size: cover;
     min-width: 100vw;
-    //border-bottom: solid black 5px;
     display: flex;
     justify-content: center;
     color: #0d0d0d;
-    background-color: #FAEBD7;
+    background-image: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80);
   }
   
   .hero {
@@ -93,18 +103,112 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 36px;
       margin-top: 10%;
+      cursor: pointer;
 
       & .cards:hover {
         transform: scale(1.1);
         
       }
 
+      & .Event-info {
+        font-size: large;
+      }
+
+      & button {
+        font-size: 1rem;
+        padding: 10px;
+        // border-radius: 12px;
+        cursor: pointer;
+
+      }
+
+      & button:hover {
+        transform: scale(1.1);
+      }
+  
+
     }
 
     @media(max-width: 900px) {
         flex-direction: column;
     }
+
+    
   }
+
+  .formcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eventform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid black 5px;
+    padding: 1rem;
+    font-size: 4rem;
+    
+    & input, select {
+      font-size: 2rem;
+      padding: 10px;
+    }
+
+    & button {
+      font-size: 2rem;
+      padding: 10px;
+    }
+
+
+  }
+
+  .omossbild-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+
+    & img {
+
+      border-radius: 12px;
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    }
+
+
+  
+  }
+
+  .omoss-info {
+    font-size: 1.5rem;
+    display: flex;
+  }
+  
+  .omoss-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .vd-kontakt {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    gap: 1rem;
+    font-size: large;
+  
+
+    & .qoute{
+      font-size: 2rem;
+      padding-top : 6rem;
+    }
+  }
+
+  
 
 
 
