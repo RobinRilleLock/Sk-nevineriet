@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Om oss</title>
 </head>
 <body>
   <header class="header-section">
@@ -42,13 +42,45 @@
     </div>
     <div class="cards">
       <img src="/assets/one-piece.png" width="600" alt="anställda">
-      <p class="omoss-info">Teamet bakom Skåne vineriet</p>
+      <p class="omoss-info">Teamet på Skåne vineriet</p>
     </div>
     <div class="vd-kontakt">
       <img src="/assets/eren-vd.png" width="350" alt="">
       <p>Vd: Eren jaeger <br> Kontakt: <a href="tel:0701337137">0701337137</a> <br>Mail: <a href="mailto:Erenjaeger.gmail.com">Erenjaeger.gmail.com</a></p>
       <p class="qoute">"I Won't Hesitate To Take Theirs." <br>-Eren jaeger </p>
-    </div> 
+    </div>
+    <div class="container">
+      <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="Namn">Namn:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="Namn" name="Namn" placeholder="Namn:">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="mail">mail:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="mail" name="mail" placeholder="@gmail:">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Ämne:</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Skriv något.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Skicka">
+      </div>
+      </form>
+    </div>
   </section>   
 
   </main>

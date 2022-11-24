@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
-    <title></title>
+    <title>Huvudsida</title>
+    <script>
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    </script>
 </head>
 <body>
   <header class="header-section">
@@ -30,32 +33,51 @@
       <div class="cards">
         <img src="/assets/wine-bar.png" width="350" alt="Produkt">
         <h2 class="cards-title"></h2>
-        <p class="Event-info">Välkomen till Little corner</p><p>En unik liten vin-bar på 20 sittplatser med gårdens <br>alla viner samt våra favoriter från övriga världen</p><p>Öppettider tor - sön 16 - 23</p> <button>Visa mer</button>
+        <p class="Event-info">Little corner</p>
+        <p>En unik liten vin-bar på 20 sittplatser med gårdens <br>alla viner samt våra favoriter från övriga världen</p>
+        <p>Öppettider tor - sön 16 - 23</p> 
+        <button id="hide">Visa mer</button>
+        
       </div>
       <div class="cards">
         <img src="/assets/barrel-wine.png" width="350" alt="Produkt">
         <h2 class="cards-title"></h2>
-        <p class="Event-info">Vin-provningen</p><p>Boka en vin-provning på Vineriet eller på utvald <br> plats från gårdens sortiment</p><p>Upp till 20 pers</p><button>Visa mer</button>
+        <p class="Event-info">Vin-provningen</p>
+        <p>Boka en vin-provning på Vineriet eller på utvald <br> plats från gårdens sortiment</p>
+        <p>Upp till 20 pers</p>
+        <button>Visa mer</button>
       </div>
       <div class="cards">
         <img src="/assets/food-wine.png" width="350" alt="Produkt">
         <h2 class="cards-title"></h2>
-        <p class="Event-info">Mat och vin-provning</p><p>Varje lördag har vi mat och vin-provning <br> med råvaror baserat på säsong</p><p>Upp till 4 pers per bokning </p><button>Visa mer</button>
+        <p class="Event-info">Mat och vin-provning</p>
+        <p>Varje lördag har vi mat och vin-provning <br> med råvaror baserat på säsong</p>
+        <p>Upp till 4 pers per bokning </p>
+        <button>Visa mer</button>
       </div>
       <div class="cards">
         <img src="/assets/master-class.png" width="350" alt="Produkt">
         <h2 class="cards-title"></h2>
-        <p class="Event-info">Master class</p><p>För dig som företag eller privat person som har ett <br>brinnande intresse för vin och tillverkning</p><p>Kan anordnas på vineriet samt utvald plats </p> <button>Visa mer</button>
+        <p class="Event-info">Master class</p>
+        <p>För dig som företag eller privat person som har ett <br>brinnande intresse för vin och tillverkning</p>
+        <p>Kan anordnas på vineriet samt utvald plats</p> 
+        <button>Visa mer</button>
       </div>
       <div class="cards">
         <img src="/assets/yard.png" width="350" alt="Produkt">
         <h2 class="cards-title"></h2>
-        <p class="Event-info">Vineriets rundtur</p><p>Boka en heldags upplevese på Vineriet och <br>Little corner club och ta in famlije-andan bakom <br> gården </p><p>tor - lör 12 - 23</p><button>Visa mer</button>
+        <p class="Event-info">Vineriets rundtur</p>
+        <p>Boka en heldags upplevese på Vineriet och<br>Little corner club och ta in famlije-andan bakom<br>gården</p>
+        <p>tor - lör 12 - 23</p>
+        <button>Visa mer</button>
       </div>
       <div class="cards">
         <img src="/assets/wineyard.png" width="350" alt="Produkt">
         <h2 class="cards-title"></h2>
-        <p class="Event-info">Övernattningen</p><p>Boka övernattning på gården och upplev allt vad <br> gården och Vineriet har att erbjuda</p><p>Hur många nätter är säsongsbaserat</p><button>Visa mer</button>
+        <p class="Event-info">Övernattningen</p>
+        <p>Boka övernattning på gården och upplev allt vad<br>gården och Vineriet har att erbjuda</p>
+        <p>Hur många nätter är säsongsbaserat</p>
+        <button>Visa mer</button>
       </div>
       </div>
 
